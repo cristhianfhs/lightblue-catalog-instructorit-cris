@@ -21,7 +21,7 @@ public class Inventory {
   private String name;
 
   // Item description
-  @NotNull
+  @NotNull 
   private String description;
 
   //Item price
@@ -29,15 +29,15 @@ public class Inventory {
   private int price;
 
   //Item img_alt
-  private String img_alt
+  private String img_alt;
 
   //Item img
   @NotNull
-  private String img
+  private String img;
 
   //Item stock
   @NotNull
-  private int stock
+  private int stock;
 
   //The constructors
 
