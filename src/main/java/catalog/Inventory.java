@@ -1,5 +1,5 @@
 
-//Now we need to create inventory.java
+//Now we need to create inventory.java.
 package catalog;
 
 import javax.persistence.Entity;
