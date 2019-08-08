@@ -68,6 +68,7 @@ public class Inventory {
     sb.append(String.format("\t\"img\": \"%s\",\n",this.img));
     sb.append(String.format("\t\"stock\": %s,\n",this.stock));
     sb.append("}");
+    return sb.toString();
    }
  }
  
