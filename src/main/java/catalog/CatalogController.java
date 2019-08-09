@@ -33,33 +33,33 @@ public class CatalogController {
      * @return all items in inventory
      */
     //BEFORE EXERCISE
-    /*@RequestMapping(value = "/items", method = RequestMethod.GET)
+    @RequestMapping(value = "/items", method = RequestMethod.GET)
     @ResponseBody
     ResponseEntity<?> getInventory() {
         return ResponseEntity.ok("[{\"id\": 1,\"name\":\"one\"},{\"id\":2,\"name\":\"two\"}]");
-    }*/
+    }
    //ADDED
-   @RequestMapping(value = "/items", method = RequestMethod.GET)
+   /*@RequestMapping(value = "/items", method = RequestMethod.GET)
    @ResponseBody
    Iterable<Inventory> getInventory() {
      return itemsRepo.findAll();
-   }
+   }*/
 
     /**
      * @return item by id
      */
     //BEFORE VERSION
-    /*@RequestMapping(value = "/items/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/items/{id}", method = RequestMethod.GET)
     ResponseEntity<?> getById(@PathVariable long id) {
                 return ResponseEntity.ok("{\"id\":1,\"name\":\"one\"}");
-    }*/
+    }
    //ADDED
-   @RequestMapping(value = "/items/{id}", method = RequestMethod.GET)
+   /*@RequestMapping(value = "/items/{id}", method = RequestMethod.GET)
   ResponseEntity<?> getById(@PathVariable long id) {
     if (!itemsRepo.exists(id)) {
        return ResponseEntity.notFound().build();
    	}
     return ResponseEntity.ok(itemsRepo.findOne(id));
-  }
+  }*/
 
 }
