@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 //Added
 //import catalog.models.*;
-import catalog.*;
 import org.springframework.beans.factory.annotation.Autowired;
 //Finish the Added
 
